@@ -1,0 +1,44 @@
+<html>
+    <title>Donate</title>
+<link rel="stylesheet" href="../css/donate.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+
+</script> 
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  {{>navbar}}
+  <div class="donatebox">
+    <form action="/donate" method="POST">
+        <p>Full name</p>
+        <input type="text" name="firstname" placeholder="Enter Firstname">
+        <p>Blood Group</p>
+        <div id="bloodgroup">
+        <select name="bloodgroup">
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="A+">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        </select>
+        </div><br>
+        <p>Consumed alcohol in the last 24 hours?</p><br>
+       <div id="alcohol">
+       <select name="alcohol">
+        <option name="yes"value="yes">Yes</option>
+        <option name="no" value="no">No</option>
+        </select>
+        </div><br>
+        <p>How much do you weigh?</p><br>
+       <input type="number" name="weight" placeholder="Enter your weight in kg" min="45">
+       <p>Do you have any health issues,if yes please specify.</p>
+        <input type="text" name="health" placeholder="Enter your health issue">
+        <br><br>
+        <input type="submit" name="" value="Submit">
+    </form>
+</div>
+</html>

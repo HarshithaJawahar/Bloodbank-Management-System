@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Login</title> 
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        {{>navbar}}
+
+          <!-- Login box -->
+        <div class="loginbox">
+            <img src="../images/login_logo.png" class="loginlogo">
+            <h1>Login Here</h1>
+            <form action="/login" method="POST">
+                <p>Email</p>
+                <input type="email" required name="email" placeholder="Enter Email">
+                <p>Password</p>
+                <input type="password" required name="password" placeholder="Enter password">
+                <input type="submit" name="submit" value="Login">
+                <a href="/register">Don't have an account?</a>
+            </form>
+        </div>
+
+    </body>
+</html>
